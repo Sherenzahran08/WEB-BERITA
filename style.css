@@ -1,0 +1,77 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Sans-serif;
+    color: #053f5c;
+    background-color: #fff;
+    /* warna logo */
+    .logo-text {
+        letter-spacing: -1px;
+        color: #ffd14c;
+    }
+    /* pindahkan box agar posisi di tengah header*/
+    .search-box {
+        width: 45%;
+        max-width: 500px;
+    }
+    .search-box .form-control:focus {
+        box-shadow: none;
+        border-color: #ced4da;
+    }
+    /*untuk menu navigasi*/
+    .nav-link {
+        color: #444 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .nav-link:hover {
+        color: #ffc107 !important;
+    }
+    /*untuk tampilan card dan tulisan berita di dalam card*/
+    .card {
+        transition: transform 0.2s ease;
+    }
+    .card:hover {
+        transform: translateY(-2px);
+    }
+    .card-title {
+        line-height: 1.4;
+        color: #111;
+        text-decoration: none;
+    }
+    /*untuk tampilan footer*/
+    .footer {
+        background-color: #f8f9fa;
+    }
+    .footer-links a {
+        color: #6c757d;
+        text-decoration: none;
+        line-height: 2;
+        display: inline-block;
+    }
+    .footer-links a:hover {
+        color: #ffc107;
+        text-decoration: underline;
+    }
+    .social-icons a {
+        transition: opacity 0.2s;
+    }
+    .social-icons a:hover {
+        opacity: 0.8;
+    }
+    @media (max-width: 768px) {
+        .search-box {
+            width: 100%;
+            order: 3;
+            margin-top: 15px;
+        }
+        .nabar-nav {
+            flex-direction: row !important;
+            overflow-x: auto;
+            white-space: nowrap;
+            gap: 15px;
+        }
+        .nav-link {
+            padding-bottom: 5px !important;
+        }
+    }
+    
+}
